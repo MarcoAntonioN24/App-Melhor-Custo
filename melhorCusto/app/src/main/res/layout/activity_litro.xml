@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDC967"
+    tools:context=".litro">
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="150dp"
+        android:layout_height="98dp"
+        android:background="#EDC967"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521">
+
+
+        <RadioButton
+            android:id="@+id/rbm"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:checked="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="MILILITRO"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rbl"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:fontFamily="sans-serif-medium"
+            android:text="LITRO"
+            android:textColor="@color/black" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txnQuant2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="VOLUME :"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txnPreco2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="260dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="PREÇO EX 5.49   "
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResult2"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="#800080"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txnPreco2"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="132dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#F7E984"
+        android:fontFamily="sans-serif-black"
+        android:text="COMPARAR"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLimp"
+        android:layout_width="132dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F7E984"
+        android:fontFamily="sans-serif-black"
+        android:text="LIMPAR"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="132dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F7E984"
+        android:fontFamily="sans-serif-black"
+        android:text="VOLTAR"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtProd1"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="PRODUTO 1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txnppd3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="260dp"
+        android:ems="10"
+        android:hint="PREÇO EX 5.49"
+        android:inputType="numberDecimal"
+        android:textColor="#1A237E"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgn2"
+        android:layout_width="150dp"
+        android:layout_height="98dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521">
+
+        <RadioButton
+            android:id="@+id/rbmn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:checked="true"
+            android:text="MILILITRO" />
+
+        <RadioButton
+            android:id="@+id/rbln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="LITRO" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txnqpd3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="VOLUME :"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rgn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtProd2"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="PRODUTO 2"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultpd4"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="#1A237E"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProd1"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <TextView
+        android:id="@+id/txtResultpd3"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="#1A237E"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultpd4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProd1"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="267dp"
+        android:layout_height="211dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faladois" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
